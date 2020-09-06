@@ -26,10 +26,10 @@ class TwoSum
           int k =  sum - arr[i];
           if(hs.contains(k))
           {
-             System.out.println("SumOfTwo" + arr[i] + " " + k );
+             return true;
           }
           hs.add(arr[i]);
        }
-       System.out.println("pair not found");
+       return false;
    }
 }
